@@ -1,0 +1,48 @@
+{return_code='SUCCESS', return_msg='null', appid='wx85e81f0aa61ed2a6', mch_id='1355954702', nonce_str='XXOWm714FuQzWaH6', sign='A62BB0ED233102E976B7724BA212D433', result_code='SUCCESS', err_code=null, err_code_des='null', trade_state='null', device_info='null', openid='oVCTYvpU0vx1hgcLsaScLwQ9RLCs', is_subscribe='N', trade_type='JSAPI', bank_type='CFT', cash_fee=122, total_fee=210, coupon_fee=88, fee_type='CNY', transaction_id='4003492001201608080865926505', out_trade_no='2016080800D598000000000000004099', attach='null', time_end='20160808161215'}
+
+
+wePayNotifyResultDTO = {WePayNotifyResultDTO@14002} "WePayNotifyResultDTO{return_code='SUCCESS', return_msg='null', appid='wx85e81f0aa61ed2a6', mch_id='1355954702', nonce_str='XXOWm714FuQzWaH6', sign='A62BB0ED233102E976B7724BA212D433', result_code='SUCCESS', err_code=null, err_code_des='null', trade_state='null', device_info='null', openid='oVCTYvpU0vx1hgcLsaScLwQ9RLCs', is_subscribe='N', trade_type='JSAPI', bank_type='CFT', cash_fee=122, total_fee=210, coupon_fee=88, fee_type='CNY', transaction_id='4003492001201608080865926505', out_trade_no='2016080800D598000000000000004099', attach='null', time_end='20160808161215'}"
+ return_code = "SUCCESS"
+ return_msg = null
+ appid = "wx85e81f0aa61ed2a6"
+ mch_id = "1355954702"
+ nonce_str = "XXOWm714FuQzWaH6"
+ sign = "A62BB0ED233102E976B7724BA212D433"
+ result_code = "SUCCESS"
+ err_code = null
+ err_code_des = null
+ trade_state = null
+ device_info = null
+ openid = "oVCTYvpU0vx1hgcLsaScLwQ9RLCs"
+ is_subscribe = "N"
+ trade_type = "JSAPI"
+ bank_type = "CFT"
+ cash_fee = {Integer@14058} "122"
+ total_fee = {Integer@14059} "210"
+ coupon_fee = {Integer@14060} "88"
+ fee_type = "CNY"
+ transaction_id = "4003492001201608080865926505"
+ out_trade_no = "2016080800D598000000000000004099"
+ attach = null
+ time_end = "20160808161215"
+
+FFB8984F9EC9B98B1F325F3E14D256AA
+
+payResultMap = {LinkedHashMap@13835}  size = 17
+ 0 = {LinkedHashMap$Entry@13843} "return_code" -> "SUCCESS"
+ 1 = {LinkedHashMap$Entry@13844} "appid" -> "wx85e81f0aa61ed2a6"
+ 2 = {LinkedHashMap$Entry@13845} "mch_id" -> "1355954702"
+ 3 = {LinkedHashMap$Entry@13846} "nonce_str" -> "mlzPyji9u5V3NfNh"
+ 4 = {LinkedHashMap$Entry@13847} "sign" -> "744A6FFBB1FBED5A447B024915292D35"
+ 5 = {LinkedHashMap$Entry@13848} "result_code" -> "SUCCESS"
+ 6 = {LinkedHashMap$Entry@13849} "openid" -> "oVCTYvsYbnVI0ThhCVtkSG3B1wqU"
+ 7 = {LinkedHashMap$Entry@13850} "is_subscribe" -> "Y"
+ 8 = {LinkedHashMap$Entry@13851} "trade_type" -> "JSAPI"
+ 9 = {LinkedHashMap$Entry@13852} "bank_type" -> "CCB_DEBIT"
+ 10 = {LinkedHashMap$Entry@13853} "cash_fee" -> "34"
+ 11 = {LinkedHashMap$Entry@13854} "total_fee" -> "210"
+ 12 = {LinkedHashMap$Entry@13855} "coupon_fee" -> "176"
+ 13 = {LinkedHashMap$Entry@13856} "fee_type" -> "CNY"
+ 14 = {LinkedHashMap$Entry@13857} "transaction_id" -> "4007212001201608080868830975"
+ 15 = {LinkedHashMap$Entry@13858} "out_trade_no" -> "2016080800D243000000000000004101"
+ 16 = {LinkedHashMap$Entry@13859} "time_end" -> "20160808163800"
