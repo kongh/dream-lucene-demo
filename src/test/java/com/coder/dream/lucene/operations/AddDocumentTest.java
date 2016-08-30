@@ -35,6 +35,10 @@ public class AddDocumentTest extends TestCase{
         writer.close();
     }
 
+    protected int getHitCount(String fieldName, String searchString) throws IOException {
+        return 0;
+    }
+
     public IndexWriter getWriter() throws IOException {
         IndexWriterConfig config = new IndexWriterConfig(new WhitespaceAnalyzer());
         return new IndexWriter(directory,config);
