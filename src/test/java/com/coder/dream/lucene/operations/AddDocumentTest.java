@@ -40,6 +40,9 @@ public class AddDocumentTest extends TestCase{
 
             StringField textField = new StringField("text",text[i], Field.Store.YES);
             doc.add(textField);
+
+            StringField multiValueField = new StringField("text",text[i]+i, Field.Store.YES);
+            doc.add(multiValueField);
             writer.addDocument(doc);
         }
         writer.close();
