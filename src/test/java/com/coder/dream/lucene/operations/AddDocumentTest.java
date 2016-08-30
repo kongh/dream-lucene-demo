@@ -2,9 +2,8 @@ package com.coder.dream.lucene.operations;
 
 import junit.framework.TestCase;
 import org.apache.lucene.analysis.core.WhitespaceAnalyzer;
-import org.apache.lucene.document.Document;
-import org.apache.lucene.document.Field;
-import org.apache.lucene.document.TextField;
+import org.apache.lucene.document.*;
+import org.apache.lucene.index.IndexOptions;
 import org.apache.lucene.index.IndexWriter;
 import org.apache.lucene.index.IndexWriterConfig;
 import org.apache.lucene.store.Directory;
@@ -30,6 +29,17 @@ public class AddDocumentTest extends TestCase{
         for (int i = 0 ; i < ids.length; ++i){
             Document doc = new Document();
             doc.add(new TextField("id",ids[i], Field.Store.YES));
+
+            FieldType filedType = new FieldType(TextField.TYPE_STORED);
+            filedType.setIndexOptions(IndexOptions.NONE);
+            Field unindexedField = new Field("unindexed", unindexed[i], filedType);
+            doc.add(unindexedField);
+
+            StringField unstoredField = new StringField("unstored",unstored[i], Field.Store.NO);
+            doc.add(unstoredField);
+
+            StringField textField = new StringField("text",text[i], Field.Store.YES);
+            doc.add(textField);
             writer.addDocument(doc);
         }
         writer.close();
