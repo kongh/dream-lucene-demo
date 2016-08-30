@@ -42,6 +42,7 @@ public class AddDocumentTest extends TestCase{
             doc.add(textField);
 
             StringField multiValueField = new StringField("text",text[i]+i, Field.Store.YES);
+            multiValueField.setBoost(1.2F); //域加权操作
             doc.add(multiValueField);
             writer.addDocument(doc);
         }
